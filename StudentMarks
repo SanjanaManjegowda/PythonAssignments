@@ -1,0 +1,19 @@
+Mathematics=int(input("Enter Marks Student Scored in Mathematics"))
+ScienceTheory=int(input("Enter Marks Student Scored in ScienceTheory"))
+SciencePractical=int(input("Enter Marks Student Scored in SciencePractical"))
+English=int(input("Enter Marks Student Scored in English"))
+Science=SciencePractical+ScienceTheory
+if Mathematics>100 or Science>100 or English >75:
+    print("Marks Entered is Above the Maximum Marks")
+elif (Mathematics>=35 or Mathematics<=100) and( Science>=35 or Science>=100) and( English>=25 or English<=75):
+     Total=(((Mathematics+ScienceTheory+SciencePractical+English)/275)*100)
+     if Total>=90:
+         print("Student has Got Grade A with",Total,"Percent")
+     elif Total>=75:
+            print("Student has Got Grade B with",Total,"Percent")
+     else:
+            print("Student has passed with Average Marks of",Total)
+               
+else:   
+    print("Student has Failed in Examination")
+    
